@@ -1,0 +1,52 @@
+<?xml version='1.0' ?>
+<payment-model>  
+  <imagesURL>../images/</imagesURL>
+  <transaction>
+    <accounttype>E</accounttype>
+    <allowgiftaid>0</allowgiftaid>
+    <amount>53.3300</amount>
+    <applyavscv2>0</applyavscv2>
+    <billingaddress>1 Wonka Mansions Hemel Hempstead Hertfordshire</billingaddress>
+    <billingpostcode>HP1 1HP</billingpostcode>
+    <contactfax>01234-567899</contactfax>
+    <contactnumber>01234-567890</contactnumber>
+    <currency>GBP</currency>
+    <customeremail>william.wonka@sagepay.com</customeremail>
+    <customername>William Wonka</customername>
+    <deliveryaddress>The Chocolate Factory Wonkaland Hemel Hempstead</deliveryaddress>
+    <deliverypostcode>W0 4KA</deliverypostcode>
+    <description>The best DVDs from Sage Pay</description>
+    <formatedamount>53.33</formatedamount>
+    <transactionid>bf7ff28c-4bff-4012-c61e-93c7862123d3</transactionid>
+    <transactiontypeid>1</transactiontypeid>
+    <vendortxcode>sagepay-071016113548-91026</vendortxcode>
+    <emailmessage><![CDATA[Thank you so very much for your order.]]></emailmessage>
+  </transaction>
+  <threedskip-url>/gateway/service/authentication?action=skip</threedskip-url>
+  <vendor>
+    <DReady>true</DReady>
+    <avscv2>true</avscv2>
+    <city/>
+    <countrycode>GB</countrycode>
+    <defaultcurrency>GBP</defaultcurrency>
+    <giftaid>true</giftaid>
+    <homepageurl>http://www.sagepay.com</homepageurl>
+    <isactive>2</isactive>
+    <logo>YourImages.gif</logo>
+    <notificationurl/>
+    <threed>true</threed>
+    <threedexemptiondate/>
+    <threedvendorname>Your3DSecureSite</threedvendorname>
+    <vendorprovidedname>Your lovely web site!</vendorprovidedname>
+		<vendortemplate>YourImages</vendortemplate>
+		<vspvendorname>YourImages</vspvendorname>
+  </vendor>
+  <language>en</language>
+  <threedredirect-url>/gateway/service/authentication?action=redirect</threedredirect-url>
+  <pareq-env>
+    <acsurl>https://test.sagepay.com/mpitools/accesscontroler?action=pareq</acsurl>
+    <md>2011925310992400</md>
+    <pareq>eJxVUctuwkAMvPcrUD4A7yMBgswiCoiilgooqnqNNhZEJQlsEkj/vrsQCr15xvbYHuOwTvetE5kiybOBx9vMG6on3OwM0eSDdGVI4YKKItpSK4kHnmCchyKQnIWh8BnzFC5HazoqbESU1WhzhBu03UbvoqxUGOnj8/xd+SJkwkdoIKZk5hMV+NIPukxyX3ZFlyFcacyilNTS5GXdekvSpKQY4cKhzqusND+qJzoIN4CV2atdWR76AOfzuX1wnW2dpwgug3BfZ1m5qLBKdRKr6XcgXze7r/VqzLYxhNOE17P15+o0mw4QXAXGUUlKMNbljHdanPdlr89DhAuPUepWUIGU0t52BXhwM0aPmUcGrb+GMn274YaQ6kOeka0QCH8xxlToxorFcm7nOoxwv2P84kzWpfWNO38vkRNLrDNu7YuaAwiuFprXQfNhG/37/C+vE7CV</pareq>
+    <termurl>https://test.sagepay.com/gateway/service/authentication?action=callback</termurl>
+  </pareq-env>
+</payment-model>

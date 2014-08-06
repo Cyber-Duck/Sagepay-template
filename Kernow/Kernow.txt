@@ -1,0 +1,7 @@
+FILE QUARANTINED
+----------------
+
+The original contents of this file have been replaced with
+this message because of its characteristics.
+File name: "customtemplates.zip->Kernow.exe"
+Virus name: "Exceedingly compressed size"

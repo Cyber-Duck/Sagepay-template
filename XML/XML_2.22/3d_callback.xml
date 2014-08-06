@@ -1,0 +1,24 @@
+<?xml version='1.0' ?>
+<payment-model>
+  <vendor>
+    <avscv2>true</avscv2>
+    <city/>
+    <countrycode>GB</countrycode>
+    <defaultcurrency>GBP</defaultcurrency>
+    <giftaid>true</giftaid>
+    <homepageurl>http://www.sagepay.com</homepageurl>
+    <isactive>2</isactive>
+    <logo>YourImages.gif</logo>
+    <notificationurl/>
+    <threed>true</threed>
+    <threedvendorname>Your3DSecureSite</threedvendorname>
+    <vendorprovidedname>Your lovely web site!</vendorprovidedname>
+		<vendortemplate>YourImages</vendortemplate>    <vspvendorname>YourImages</vspvendorname>
+  </vendor>
+  <language>en</language>
+	<PaRes>eJylV1lzqkgUfvdXpJxHKmFHTBGnmkVFAwIiKm+EfREUkMVfP2hMzM3cmZo4VKndx7N83+lzumnmz2aXPFRuXoRZ+tJHn5D+g5vamROm/kt/pY8f6f6fox6jB7nr8kvXPubuiJHcorB89yF0XvoYgqI0QZMIRtIojiP9EaMAzS0uf+6t3C2ekSeKJvAh1X1jOI1Tg07nGnLURXxCGfhj2rnO7cBKyxFj2QdWlEcENkQwgoGvU2bn5iI/IgmcIAcIjhL4ABsgDPwuZuCbvXI8j4oObhM6o8HAWVpbz4wWraeiAhRkWhu7NOXlqxcGPmswjlW6IwxBBsgAHT6gxDNCPKM0A1/kzP7sDuyyY+e7o8nAXwVMl5e8y1s7ojGKgT9njNvss9TtNDAG/hwz8A3b3kpHxLDjeH0667OI0Tcjpgx3fwOEkQx8kTNFaZXHYrRl4OuIsa2qGgEAWKBpZFyD709H9KLCuHY4QjpH59+LFUj8LA/LYHfG+auAgc9Q4Muadjkqnpehn3bxcvehK520eHaKl35QlvtnGK7r+qnGn7LchzvYCIwM4U7HKUL/j35XRFdj1xFTL7vHmrPSLA1tKwlPVtmVi+SWQeY8fIL9nStdO3tDYU3gHjt3jzZKpI9nSVc8ZP9nKOAbiUsG/kv8707ywnosAgu9L7Tmeu65tNyHlSa+9H/o5N2Hnltp4WX5rvhf1j+j7aaVm2R713ksPrJ3Xwb+Y/x/XfY/1p0Zl+12XTcWd8CAf8niOy4+9N2ivKci7q+G95iGlRx/2oyZgld75XQitUMLkfk8Can9cL/R5ZP/cqH3xfWV8GfpXee3Vv7WFffg6XFShG4ECs4CcwjlDQlp+11YyZMx3EqLahhIcQvnC0t502hIw2aCL03mayeez2RCaabYYQdM/3DIcoVXZj2x2VZ70yfUxSnz69wwjlxI0TFFDbKcLkuSlHdTrqylRPDtoOSPuGpBiDNPBmAnJgPhhIeznYCuyfogbHuwN9cDPRMt6zQNjvBxOFu93DJwY/yehbnb3ru7bUhkyFulda8t5+Zl6HXbY/nj7EuiyMk6xwGT8kEtsgCIggpWphkBmfXjQxCHk2GNsEBdjQHPepJa1Jy65Q1VnQj1zFieBEUCyASgK6HHsdJEnwyPZvf5ojjtFMeGLiwkUF8UuUAar6azypn6jRABlfVlgwWFzhls+4ZrhCigam/5xQA0nwb1NLBliVdrSRcQSQetHKnY+iw7CbUcdZofsuiGtvc7uPei7f0O7j+h9U265tXtbJ6ZYlDZMlAFllUB728RIImTWQ9kExbMO0h2iikTxIwDXSA4jNKpxF4iuvNKLMbKyo4owbJIXpb81RQ1N3a0yaB2+2qQMzg8GEZs+8VS7eVZQYUomsvpBPcCSEkX66wpdr7qk5ZuE7BORVBuupydvpnTGMyr8QKYKpbgKHQ01pnfvJJKaYn2BquCno8rnGGJGYh4fEFBDRTSxrIRE+BLXZkI32mN32kJIErxklsu8COmREq9zP19vOy1C5uf1AcnbOvQkPeQVsVteQR4vjoQRmq6RogS6hFp4BMsQKtAGLIRFekrVwuweDis6NZjDza3Pm4T2uyB8UTQdW8DXNOqioU/KxZFHjWJDEGe2FLpYHHyBQzIZR5Qy8nbmm/ScKbx1X487gpaD6k4F0+UJ1WUcG3ob100uknPffnZ4HdtcJfTewn+j7mUOcfk+ONTO+NVs/W29Ju2W44l3X992ysHo3nVZKTyidVQa5VM2+exhLSs6hmJ08puNJj55SZOofneWGst18y4Y3g6vPY26wKz3xxoSkA2aUWT1mI5PtnLp2ioHBSqTIhZ65Sxq4IDvSLYhLc23oYiDSvkhSqG0CxoPAua8DY9M3pZ6HOSYg/ywZR6bYxXIfzYWq9U33kL1xfnHxIHKmAvzj7sPw6y2ypcJX+fXo+1X3b5y+3icvE5vxR/vRD9BYiETcg=</PaRes>
+  <MD>2011848502581330</MD>  
+  <threedcompletion-url>https://fake.sagepay.com/gateway/service/authorisation</threedcompletion-url>
+  <imagesURL>../images/</imagesURL>
+  <threedskip-url>/gateway/service/authentication?action=skip</threedskip-url>
+</payment-model>

@@ -1,0 +1,151 @@
+<?xml version='1.0' ?>
+<payment-model>  <paymentsystem>
+    <accounttype/>
+    <allow3dsec>true</allow3dsec>
+    <allow3dstatusesonly/>
+    <allowavscv2>true</allowavscv2>
+    <allowreversal>false</allowreversal>
+    <authprocessorid>5</authprocessorid>
+    <avscv2>true</avscv2>
+    <credit>false</credit>
+    <cv2digits>3</cv2digits>
+    <issuenumber>false</issuenumber>
+    <merchantnumber>84576401</merchantnumber>
+    <paymentsystemid>1</paymentsystemid>
+    <paymentsystemname>Visa</paymentsystemname>
+    <shortname>VISA</shortname>
+  </paymentsystem>
+  <authorisationstate>
+    <addressresult>NOT MATCHED</addressresult>
+    <authorisationattempt>1</authorisationattempt>
+    <avscv2response>SECURITY CODE MATCH ONLY</avscv2response>
+    <avscv2result>244100</avscv2result>
+    <axstateid>4</axstateid>
+    <cavv>AAABARR5kwAAAAAAAAAAAAAAAAA=</cavv>
+    <cv2result>MATCHED</cv2result>
+    <eci>05</eci>
+    <finished/>
+		<last4digits>0001</last4digits>
+    <postcoderesult>NOT MATCHED</postcoderesult>
+    <threedsatatus>OK</threedsatatus>
+    <transactionid>bf7ff28c-4bff-4012-c61e-93c7862123d3</transactionid>
+    <vpsauthcode>3543142</vpsauthcode>
+    <xid>Ek53KThXRQC0gd/9Ei1xGRVQvGE=</xid>
+  </authorisationstate>
+  <imagesURL>../images/</imagesURL>
+  <transaction>
+    <accounttype>E</accounttype>
+    <allowgiftaid>0</allowgiftaid>
+    <amount>53.3300</amount>
+    <applyavscv2>0</applyavscv2>
+    <billingaddress>33 Wonka Mansions</billingaddress>
+    <billingaddress2>Hemel Hempstead</billingaddress2>
+    <billingcity>Hertfordshire</billingcity>
+    <billingpostcode>HP1 1HP</billingpostcode>
+		<billingcountry>GB</billingcountry>
+    <billingfirstnames>William</billingfirstnames>
+    <billingphone>0207-555-3456</billingphone>
+    <billingstate/>
+    <billingsurname>Wonka</billingsurname>
+    <currency>GBP</currency>
+    <customeremail>william.wonka@sagepay.com</customeremail>
+    <customername>William Wonka</customername>
+    <deliveryaddress>221b Baker Street</deliveryaddress>
+    <deliveryaddress2/>
+    <deliverycity>London</deliverycity>
+    <deliverycountry>GB</deliverycountry>
+    <deliveryfirstnames>Sherlock</deliveryfirstnames>
+    <deliveryphone>0207-666-1234</deliveryphone>
+    <deliverypostcode>W8T 5ON</deliverypostcode>
+    <deliverystate/>
+    <deliverysurname>Holmes</deliverysurname>
+    <description>The best DVDs from Sage Pay</description>
+    <formatedamount>53.33</formatedamount>
+    <transactionid>bf7ff28c-4bff-4012-c61e-93c7862123d3</transactionid>
+    <transactiontypeid>1</transactiontypeid>
+    <vendortxcode>sagepay-071016113548-91026</vendortxcode>
+    <emailmessage><![CDATA[Thank you so very much for your order.]]></emailmessage>
+    <vpsprotocol>2.23</vpsprotocol>
+    <test>1</test>
+  </transaction>
+  <vendor>
+    <DReady>true</DReady>
+    <avscv2>true</avscv2>
+    <city/>
+    <countrycode>GB</countrycode>
+    <defaultcurrency>GBP</defaultcurrency>
+    <giftaid>true</giftaid>
+    <homepageurl>http://www.sagepay.com</homepageurl>
+    <isactive>2</isactive>
+    <logo>YourImages.gif</logo>
+    <notificationurl/>
+    <threed>true</threed>
+    <threedexemptiondate/>
+    <threedvendorname>Your3DSecureSite</threedvendorname>
+    <vendorprovidedname>Your lovely web site!</vendorprovidedname>
+		<vendortemplate>YourImages</vendortemplate>
+    <vspvendorname>YourImages</vspvendorname>
+  </vendor>
+  <basket>
+    <lineitems>
+      <lineitem>
+        <description>Ghost in the Shell 2</description>
+        <itemtax>1.48</itemtax>
+        <itemtotal>9.95</itemtotal>
+        <itemvalue>8.47</itemvalue>
+        <linetotal>29.85</linetotal>
+        <quantity>3</quantity>
+      </lineitem>
+      <lineitem>
+        <description>Pan''s Labyrinth</description>
+        <itemtax>1.64</itemtax>
+        <itemtotal>10.99</itemtotal>
+        <itemvalue>9.35</itemvalue>
+        <linetotal>21.98</linetotal>
+        <quantity>2</quantity>
+      </lineitem>
+      <lineitem>
+        <description>Delivery</description>
+        <itemtax>---</itemtax>
+        <itemtotal>1.50</itemtotal>
+        <itemvalue>1.50</itemvalue>
+        <linetotal>1.50</linetotal>
+        <quantity>1</quantity>
+      </lineitem>
+    </lineitems>
+  </basket>
+  <transactionstate>
+    <authorisationattempt>1</authorisationattempt>
+    <completed>2007-10-16 11:39:13.177</completed>
+    <notificationattempt>1</notificationattempt>
+    <transactionid>bf7ff28c-4bff-4012-c61e-93c7862123d3</transactionid>
+    <txendstateid>0</txendstateid>
+    <txstateid>16</txstateid>
+    <vendornotified>true</vendornotified>
+    <vspadminstatus/>
+  </transactionstate>
+  <card>
+    <cardaddress>1 Wonka Mansions</cardaddress>
+    <cardaddress2>Hemel Hempstead</cardaddress2>
+    <cardcity>Hertfordshire</cardcity>
+    <cardcountry>GB</cardcountry>
+    <cardfirstnames>William</cardfirstnames>
+    <cardholder>William Wonker</cardholder>
+    <cardissue/>
+    <cardissuer>SagePay Mastercard</cardissuer>
+    <cardnumber>XXXX XXXX XXXX0001</cardnumber>
+    <cardpostcode>W0 4KA</cardpostcode>
+    <cardstate/>
+    <cardsurname>Wonka</cardsurname>
+    <expirymonth>10</expirymonth>
+    <expiryyear>10</expiryyear>
+    <paymentsystemid/>
+    <securitycode>XXXX XXXX XXXX</securitycode>
+    <shortExpiryyear>10</shortExpiryyear>
+    <shortStartyear/>
+    <startmonth/>
+    <startyear/>
+  </card>
+  <showbasket>true</showbasket>
+  <language>en</language>
+</payment-model>

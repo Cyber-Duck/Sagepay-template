@@ -1,0 +1,199 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      <title>Sage Pay - Keeping Money Moving</title>
+      <link rel="stylesheet" href="../images/YourImages/styles.css" />
+      <script type="text/javascript" language="javascript">
+	  
+	  if (document.images) {
+		 var cancel_btn = new Image()
+		 cancel_btn.src = "../images/YourImages/cancel_btn.gif"
+		 var cancel_over = new Image()
+		 cancel_over.src = "../images/YourImages/cancel_over.gif"
+		 var proceed_btn = new Image()
+		 proceed_btn.src = "../images/YourImages/proceed_btn.gif"
+		 var proceed_over = new Image()
+		 proceed_over.src = "../images/YourImages/proceed_over.gif"
+		 var submittedimg = new Image()
+		 submittedimg.src = "../images/YourImages/submitted.gif"
+		 var subsmallimg = new Image()
+		 subsmallimg.src = "../images/YourImages/subsmall.gif"
+		 }
+	</script>
+   <script type="text/javascript" language="javascript" src="../images/sagepay/buttonscript.js"></script>
+   <script type="text/javascript"> 
+	function showHide(obj){
+		var curSel=obj.options[obj.selectedIndex].value
+		var show=(document.all)? 'block' : 'table-row';
+		if(curSel=='US'){ 
+			document.getElementById('stateRow').style.display=show;
+		}else{
+			document.getElementById('stateRow').style.display="none";
+		} 
+	} 
+	</script>
+</head>
+   <body>
+      <div id="pageWrapperLow">
+         <div id="formCardDetails">
+            <div style="text-align: center; padding: 5px;"><span class="errortext"></span></div>
+            <div class="container">
+               <form method="post" name="carddetails" id="carddetails"
+                     action="/gateway/service/carddetails">
+                  <div class="formitem row">
+                     <div class="col5"><label>Card Number<span class="required">required</span></label><input type="text" name="cardnumber" class="col5" autocomplete="off" /></div>
+                     <div class="col7">
+                        <div class="help-text">
+                           <p>The long number on the front of your credit or debit card</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="formitem row">
+                     <div class="col5"><label>Firstname:<span class="required">required</span></label><input name="cardfirstnames" type="text" class="col5" maxlength="20"
+                               autocomplete="off"
+                               value="William" /></div>
+                     <div class="col7">
+                        <div class="help-text">
+                           <p>Name exactly as it is written on your credit or debit card</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="formitem row">
+                     <div class="col5"><label>Surname:<span class="required">required</span></label><input name="cardsurname" type="text" class="col5" maxlength="20" autocomplete="off"
+                               value="Wonker" /></div>
+                     <div class="col7">
+                        <div class="help-text">
+                           <p>Name exactly as it is written on your credit or debit card</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="formitem row">
+                     <div class="col5"><label for="dob">Valid From<span class="required">required</span></label>Month:<select name="startmonth" span="2" class="date" style="width:50px;margin-left:10px">
+                           <option value=""></option>
+                           <option xmlns="" value="01">01</option>
+                           <option xmlns="" value="02">02</option>
+                           <option xmlns="" value="03">03</option>
+                           <option xmlns="" value="04">04</option>
+                           <option xmlns="" value="05">05</option>
+                           <option xmlns="" value="06">06</option>
+                           <option xmlns="" value="07">07</option>
+                           <option xmlns="" value="08">08</option>
+                           <option xmlns="" value="09">09</option>
+                           <option xmlns="" value="10">10</option>
+                           <option xmlns="" value="11">11</option>
+                           <option xmlns="" value="12">12</option></select><span style="padding-left: 5px;">Year:<select name="startyear" span="2" class="date" style="width:80px;margin-left:10px">
+                              <option value=""></option>
+                              <option xmlns="" value="94">1994</option>
+                              <option xmlns="" value="95">1995</option>
+                              <option xmlns="" value="96">1996</option>
+                              <option xmlns="" value="97">1997</option>
+                              <option xmlns="" value="98">1998</option>
+                              <option xmlns="" value="99">1999</option>
+                              <option xmlns="" value="00">2000</option>
+                              <option xmlns="" value="01">2001</option>
+                              <option xmlns="" value="02">2002</option>
+                              <option xmlns="" value="03">2003</option>
+                              <option xmlns="" value="04">2004</option>
+                              <option xmlns="" value="05">2005</option>
+                              <option xmlns="" value="06">2006</option>
+                              <option xmlns="" value="07">2007</option>
+                              <option xmlns="" value="08">2008</option>
+                              <option xmlns="" value="09">2009</option>
+                              <option xmlns="" value="10">2010</option>
+                              <option xmlns="" value="11">2011</option>
+                              <option xmlns="" value="12">2012</option>
+                              <option xmlns="" value="13">2013</option>
+                              <option xmlns="" value="14">2014</option></select></span></div>
+                     <div class="col7"></div>
+                  </div>
+                  <div class="formitem row">
+                     <div class="col5"><label for="dob">Expiry date<span class="required">required</span></label>Month:<select name="expirymonth" span="2" class="date" style="width:50px;margin-left:10px">
+                           <option value=""></option>
+                           <option xmlns="" value="01">01</option>
+                           <option xmlns="" value="02">02</option>
+                           <option xmlns="" value="03">03</option>
+                           <option xmlns="" value="04">04</option>
+                           <option xmlns="" value="05">05</option>
+                           <option xmlns="" value="06">06</option>
+                           <option xmlns="" value="07">07</option>
+                           <option xmlns="" value="08">08</option>
+                           <option xmlns="" value="09">09</option>
+                           <option xmlns="" value="10">10</option>
+                           <option xmlns="" value="11">11</option>
+                           <option xmlns="" value="12">12</option></select><span style="padding-left: 5px;">Year:<select name="expiryyear" span="2" class="date" style="width:80px;margin-left:10px">
+                              <option value=""></option>
+                              <option xmlns="" value="14">2014</option>
+                              <option xmlns="" value="15">2015</option>
+                              <option xmlns="" value="16">2016</option>
+                              <option xmlns="" value="17">2017</option>
+                              <option xmlns="" value="18">2018</option>
+                              <option xmlns="" value="19">2019</option>
+                              <option xmlns="" value="20">2020</option>
+                              <option xmlns="" value="21">2021</option>
+                              <option xmlns="" value="22">2022</option>
+                              <option xmlns="" value="23">2023</option>
+                              <option xmlns="" value="24">2024</option>
+                              <option xmlns="" value="25">2025</option>
+                              <option xmlns="" value="26">2026</option>
+                              <option xmlns="" value="27">2027</option>
+                              <option xmlns="" value="28">2028</option>
+                              <option xmlns="" value="29">2029</option>
+                              <option xmlns="" value="30">2030</option>
+                              <option xmlns="" value="31">2031</option>
+                              <option xmlns="" value="32">2032</option>
+                              <option xmlns="" value="33">2033</option></select></span></div>
+                     <div class="col7">
+                        <div class="help-text">
+                           <p>If not present, leave blank</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="formitem row">
+                     <div class="col3"><label>Issue Number</label><input type="text" class="span2" maxlength="2" name="cardissue" style="width: 50px;"
+                               autocomplete="off" /></div>
+                     <div class="col9">
+                        <div class="help-text">
+                           <p>Switch/Solo only, if not present leave blank</p>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="formitem row">
+                     <div class="col5"><label>Security Code<span class="required">required</span></label><input type="text" class="span2" maxlength="4" name="securitycode"
+                               style="width: 50px;"
+                               autocomplete="off" /></div>
+                     <div class="col7"></div>
+                  </div><input name="action" type="hidden" value="proceed" /><input type="hidden" name="clickedButton" value="" /><a id="proceedButton" href="#" onmouseover="activate('proceed')"
+                     onmouseout="inactivate('proceed')"
+                     onclick="submitTheForm('carddetails','proceed');return false">
+                     <SCRIPT type="text/javascript" language="JavaScript1.2">
+                        document.write('<img border="0" name="proceed" src="');
+                        document.write('../images/YourImages/proceed_btn.gif');
+                        document.write('" alt="');
+                        document.write('Proceed');
+                        document.write('"/>');
+                        
+                     </SCRIPT></a><NOSCRIPT><input id="proceedButton" name="proceed" type="image"
+                            src="../images/YourImages/proceed_btn.gif"
+                            alt="Proceed" /></NOSCRIPT>
+               </form>
+               <form method="post" name="cancelpayment" id="cancelpayment"
+                     action="/gateway/service/cancellation"><input type="hidden" name="clickedButton" value="" /><a style="float:left;" href="#" onmouseover="activate('cancel')"
+                     onmouseout="inactivate('cancel')"
+                     onclick="submitTheForm('cancelpayment','cancel');return false">
+                     <SCRIPT type="text/javascript" language="JavaScript">
+                        document.write('<img border="0" name="cancel" src="');
+                        document.write('../images/YourImages/cancel_btn.gif');
+                        document.write('" alt="');
+                        document.write('Cancel');
+                        document.write('"/>');
+                        
+                     </SCRIPT></a><NOSCRIPT><input name="cancel" type="image" src="../images/YourImages/cancel_btn.gif"
+                            alt="Cancel" /></NOSCRIPT>
+               </form>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

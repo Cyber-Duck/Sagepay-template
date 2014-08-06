@@ -1,0 +1,1 @@
+Place DTD and .ent files in here, and then point here in Kernow Options -> Resolvers

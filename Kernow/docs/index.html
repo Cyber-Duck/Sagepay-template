@@ -1,0 +1,258 @@
+<html>
+	<head>
+		<title>Kernow 1.5.2</title>
+		<link rel="stylesheet" type="text/css" href="styles/kernow.css"></link>
+		<link rel="shortcut icon" href="images/Kernow-Icon.gif" type="image/gif"/>		
+	</head>
+	<body>
+	<a name="top"/>
+	<div id="container">		
+		<br/>
+		<div class="imgDiv">
+			<img src="images/directory.png"/>
+			<div class="figText">Kernow running a multithread directory transform</div> 					
+		</div>
+		
+		<h1><img style="position:relative;top:5px;" src="images/Kernow-Icon.gif"/>Kernow 1.5.2</h1>
+				
+		<div id="downloadBox">
+			<b><a target="_new" href="http://sourceforge.net/projects/kernowforsaxon">Click here to download Kernow</a></b>
+			<br/><br/>
+			<a target="_new" href="http://kernowforsaxon.sourceforge.net/jws.html">(or run now via Java Web Start)</a>	
+		<br/><br/>
+		<div>Note: Kernow 1.5.2 requires Java 1.6, which is not currently available for OSX - please use version 1.4 instead</div>			
+		</div>
+		
+		<br/>
+		
+		<div id="contactBox">
+			<div class="title">Contact details</div>	
+			<div class="para">
+				<strong>Kernow</strong>
+				<ul>						
+					<li>Mailing list: <a href="https://lists.sourceforge.net/lists/listinfo/kernowforsaxon-help" target="_new">kernowforsaxon-help</a></li>
+					<li>Click <a href="http://sourceforge.net/tracker/?func=add&group_id=161018&atid=818177" target="_new">here</a> to submit a bug report</li>
+					<li>andrew.j.welch@gmail.com</li>
+					<li><a href="http://www.andrewjwelch.com">http://andrewjwelch.com</a>						
+				</ul>
+				
+				<strong>Saxon</strong>
+				<ul>
+					<li><a href="http://www.saxonica.com">http://www.saxonica.com</a></li>
+					<li>Mailing list: <a href="http://lists.sourceforge.net/lists/listinfo/saxon-help">saxon-help</a></li>
+				</ul>	
+			</div>
+		</div>
+					
+		<div id="index">
+			<ul>
+				<li><a href="#e1">What is Kernow?</a></li>
+				<li><a href="#e2">Downloading and running Kernow</a></li>
+				<li><a href="#e3">What are Single File, Standalone and Directory transforms?</a></li>
+				<li><a href="#e4">Caching Entity and URI Resolvers, and the local cache</a></li>
+				<li><a href="#e5">Getting Schema Aware</a></li>
+				<li><a href="#e5.1">Running Schema Aware transforms</a></li>
+				<li><a href="#e6">Setting input and output suffixes</a></li>
+				<li><a href="#e6.1">Using multiple threads for directory transforms</a></li>
+				<li><a href="#e6.2">Performance Testing</a></li>
+				<li><a href="#e7">The switches dialog</a></li>
+				<li><a href="#e8">Running XQuery from Kernow</a></li>
+				<li><a href="#e9">Performing directory validation</a></li>
+				<li><a href="#e10">Using Saxon-SA for directory validation</a></li>
+				
+				<li><a href="#e11">The Kernow API</a></li>
+				<li><a href="#e12">Running Kernow from Ant</a></li>
+				<li><a href="#e13">The Batch Tab</a></li>
+				
+				<li><a href="#e14">The config file Kernow.config</a></li>
+				<li><a href="#e15">Memory issues - increasing the amount of memory available to Kernow</a></li>
+				<li><a href="#e16">Support and feature requests</a></li>
+			</ul>			
+		</div>		
+				
+		<div id="content">		
+		
+			<div class="entry">		
+				<div class="imgDiv">
+					<img src="images/translation-german.png"/>
+					<div class="figText">Kernow is available in English, French and German</div> 					
+				</div>						
+				<a name="e1"/>					
+				<div class="title">What is Kernow?</div>
+				<div class="para">Kernow is an open source tool designed to make it faster and easier to repeatedly run transforms using <a href="http://www.saxonica.com">Saxon</a>.</div>
+				<div class="para">It uses compiled stylesheets, multiple threads and caching resolvers to make the transforms run efficiently, and comboboxes that remember between runs to save your fingers having to retype paths. Kernow is runnable from Ant allowing it to slot into your build process, and its a high level API for Saxon making it very easy to run transforms from your own Java applications.</div>
+			<div class="para">Kernow is written by <a href="http://www.andrewjwelch.com">Andrew Welch</a> using <a href="http://www.java.com/en/download/manual.jsp" target="_new">Java 1.6</a>.</div>
+			
+			<br/>
+			<div class="para">Special thanks to:<br/>
+				<div><a href="http://www.fgeorges.org/">Florent Georges</a><br/> - Additional coding<br/> - French translation</div>
+				<br/>
+				<div><a href="http://cap-studio.de/">Michael Müller-Hillebrand</a><br/> - German translation</div>				
+			</div>			
+		</div>
+		
+			<div class="entry">				
+				<a name="e2"/>
+				<div class="title">Downloading And Running Kernow</div>	
+				<div class="para">Kernow is hosted on SourceForge which can be difficult to navigate around the first time you use it.  Clicking the link above opens the "Project page" for Kernow, click the green "Download Kernow" button on that page, then click "Download" next to the latest version of Kernow, and finally click "kernow.zip".  Once downloaded and unzipped, for Windows users just double-click Kernow.exe or use the run.bat file.  For non-Windows users, make sure all the Jar files in the lib folder are on the classpath, and then use the entry point: <code>net.sf.kernow.GUI</code></div>
+			<div class="para">Alternatively you can <a target="_new" href="http://kernowforsaxon.sourceforge.net/jws.html">run Kernow now</a> using Java Web Start.  This will install Kernow on your machine and add icons to your desktop and start menu.  It will take a long time the first time you run it as the program downloads in the background, however from then on it will run from your machine and automatically update itself when I release new versions, which is cool.</div>	
+			</div>	
+		
+			<div class="entry">
+				<a name="e3"/>
+				<div class="title">What are Single File, Standalone and Directory transforms?</div>	
+				<div class="para"><strong>Single File</strong> transforms consist of an input XML file, an XSLT file, and optionally an output file.  If no output file is specified all output is sent to Kernow's output window.</div>
+				<div class="para"><strong>Standalone</strong> transforms don't have an input XML file, they are purely an XSLT 2.0 file with a specified initial template to start the processing at.  Standlone transforms either don't need input, or manage the input within the transform (through doc(), document(), collection(), unparsed-text() etc). Again an optional an output file can be specified or all output is display in the output window.</div>				<div class="para"><strong>Directory</strong> transforms consist of an input directory, an XSLT file and an output directory.  Each input is transformed to an output file.</div>
+			</div>	
+			
+			<div class="entry">
+				<div class="imgDiv">
+					<img src="images/options-resolvers.png"/>
+					<div class="figText">Kernow Options - enable the resolvers for best performance</div> 					
+				</div>
+				<a name="e4"/>
+				<div class="title">Caching Entity and URI Resolvers, and the local cache</div>	
+				<div class="para">Directory transforms are really helped by caching entity resolvers - these store items that would otherwise be fetched for each transform of each input file.  Kernow contains a caching entity resolver (useful when the XML contains DTD references), a caching URI resolver (useful for files referenced in the XSLT) and a "caching entity resolver for the Collection() function", which is an entity resolver used specificly by the collection() function.  Each of these can be disabled in the options, but its unlikely you would ever want to.</div>
+			<div class="para">The <strong>local cache</strong> facility allows you specify a place where the resolvers should look first.  Typically a resolver will fetch a resource off the net and then store it in memory - to avoid that inital fetch store a copy of the resouce locally and then point Kernow at that.</div>
+				<div class="para">If you don't want to see "The resolver has cached..." messages, then check the "suppress caching messages" checkbox.</div>
+			</div>	
+			
+			<div class="entry">
+				<a name="e5"/>
+				<div class="title">Getting Schema Aware</div>	
+				<div class="para">To be able to run schema aware transforms you'll need to get a free trial license by using the <code>Options -> Get Schema Aware</code> menu and filling out the form on the Saxonica website.  Then download Saxon-SA (Saxon Schema Aware version) and unzip it to your machine.  Copy the Saxon-SA jars to the Kernow "lib" directory (specifically saxon8sa.jar and saxon8sa-jaxp.jar) and when you receive your license also put that in the lib directory.  When you restart Kernow the title bar should tell you when Kernow is now "Schema Aware".  If you still see "Basic" in the title bar, make sure the saxon8sa jars and saxon-license.lic are in Kernow's lib directory.  If you aren't using the supplied Run.bat file, you will have to manually make sure the jar files *and* the directory containing the license file are all on the classpath.  It sounds more complicated than it is.  Any problems just email me.</div>
+			</div>	
+			
+			<div class="entry">
+				<a name="e5.1"/>
+				<div class="title">Running Schema Aware transforms</div>	
+				<div class="para">If Kernow detects Saxon-SA and a valid saxon-license.lic it will automatically enable schema aware transforms.  Schema Aware configuration can be done from the <code>Schema Aware -> Configure Schema Aware</code> menu.  Here you can disable schema aware transforms (Kernow will use Saxon Basic instead), select the level of validation of source documents, and whether result validation errors are warnings (so you can see all the validation errors and not just the first - useful if you want to fix more than one at a time).</div>
+			</div>	
+						
+			<div class="entry">
+				<div class="imgDiv">
+					<img src="images/options.png"/>
+					<div class="figText">Set the input files should be processed and choose the output suffix</div> 					
+				</div>
+				<a name="e6"/>
+				<div class="title">Setting input and output suffixes</div>	
+				<div class="para">Under the <code>Options -> General</code> tab you can set the output suffix used for directory transforms, and the allowed input suffixes.  When you run a directory transform you supply input and output directories, and the XSLT file.  Kernow will build a file list of all files in the input directory with suffixes that match one of the allowed input suffixes, optionally recursing from there down.  This allows you to transform say, all .htm files (HTML files that are really well-formed XML) but ignore other files like .css, .gif etc.</div>
+				<div class="para">Kernow transforms each input file to a primary output file of the same name, but with a suffix dependant on the following rules:
+				<ul>
+					<li>If a suffix is supplied (and enabled) in the options that suffix is used.  Useful if you want to have a proprietary extension.</li>
+				  <li>If a specific suffix is not supplied in the options, Kernow will use the following mappings based on the output method specified in the transform: "html" and "xhtml" become ".html", "text" becomes "txt" and anything else becomes ".xml".  </li>
+				  <li>If no suffix is supplied in the options and no output method is used, it defaults to ".xml" </li>
+				 </ul>
+				</div>	
+			</div>
+			
+			<div class="entry">
+				<div class="imgDiv">
+					<img src="images/multithreading.png"/>
+					<div class="figText">Set how many threads Kernow should use</div> 					
+				</div>
+				<a name="e6.1"/>
+				<div class="title">Using multiple threads for directory transforms</div>	
+				<div class="para">Under the <code>Options -> Multithreading</code> tab you can set the number of threads to use for directory transforms.  By default this is set to 1, which is effectively the same as running a single threaded application.  If you are running Kernow on a multi-core or multi-processor system and have sufficient memory to run multiple threads, *and* the number and type of transforms involved outweighs the cost of creating the threads then you will benefit from using multiple threads.  In other cases you may find increasing this number has a negative effect because the bottleneck is disk I/O, and using mutliple threads adds the extra overhead of thread creation and management.</div>
+				<div class="para">It's best to experiment to find the right value that suits your system and the type of transform you're running.</div>
+			</div>	
+
+			<div class="entry">
+				<div class="imgDiv">
+					<img src="images/performance-testing.png"/>
+					<div class="figText">The performance testing tab</div> 					
+				</div>
+				<a name="e6.2"/>
+				<div class="title">Performance Testing</div>	
+				<div class="para">Under the <code>Options -> Performance Testing</code> tab you can tell Kernow to repeatedly run Single File or Standalone transforms and then display the average time for those runs.  This is useful when you want to test the performance of a transform, as the first few runs can produce very different times as the JVM "warms up".  When working out the average time across the runs, Kernow will ignore the first n runs specified here.</div>
+				<div class="para">The defaults of 5 and 2 are probably ok for most needs - the first 2 times will be ignored with the average taken from the remaining 3.</div>
+			</div>
+									
+			<div class="entry">
+				<div class="imgDiv">
+					<img src="images/switches.png"/>
+					<div class="figText">You can set most of Saxon's command line options here</div> 
+				</div>
+				<a name="e7"/>
+				<div class="title">The Saxon Options dialog</div>	
+				<div class="para">The Saxon Options dialog is accessed using <code>Configuration -> Saxon Options</code>.  It's here that you can set the various switches that you would normally set from the command line.  For more information on what these do, see the Saxon documentation: <a href="http://www.saxonica.com/documentation/using-xsl/commandline.html">http://www.saxonica.com/documentation/using-xsl/commandline.html</a></div>
+			</div>	
+			
+			<div class="entry">
+				<div class="imgDiv">
+					<img src="images/xquery-sandbox.png"/>
+					<div class="figText">The XQuery Sandbox with as-you-type syntax checking</div> 
+				</div>
+				<a name="e8"/>
+				<div class="title">Running XQuery from Kernow</div>	
+				<div class="para">XQuery support is limited in Kernow - you can run an individual .xqy or .xquery file in the Standalone tab (it will detect its an XQuery file from the extension) or you can just play in the XQuery Sandbox tab.  This has basic syntax highlighting and performs syntax checking as you type.</div>
+			</div>	
+			
+			<div class="entry">
+				<a name="e9"/>
+				<div class="title">Performing directory validation</div>	
+				<div class="para">Kernow can be used to validate directories of XML with W3C XML Schemas, using either Xerces, Saxon-SA or any JAXP schema processor.  Select the directory to validate, select schema (click "check schema" to ensure the schema compiles) and then click run.</div>
+			</div>	
+			
+			<div class="entry">
+				<a name="e10"/>
+				<div class="title">Using Saxon-SA for directory validation</div>	
+				<div class="para">Saxon's schema processor is much faster than Xerces and provides far superior errors messages, however its not free but not too expensive either.  You can buy a schema processor only license (use the <code>Schema Aware -> Get Schema Aware</code> menu) which allows you use Saxon's schema processor but <empasis>not</emphasis> run schema aware transforms.  Make sure your license file and the Saxon-SA jars are in Kernow's lib folder and restart Kernow, then select Saxon in the <code>Options -> Validation</code> menu.</div>
+			</div>	
+			
+			<div class="entry">
+				<a name="e11"/>
+				<div class="title">The Kernow API</div>	
+				<div class="para">Since 1.5 Kernow has an API which hides the complexities of running transforms.  If you want to run a directory transform with a compiled stylesheet, caching resolvers and default options, you would use:
+					<div><code>Kernow kernow = new Kernow();</code></div>
+					<div><code>kernow.runDirectoryTransform(inputDir, XSLT, outputDir, params);</code></div>						
+				</div>
+				<div class="para">See the javadoc for more information.  Note: I'm planning on improving/finalising the API for 1.6 so its likely to change between now and then.</div>
+			</div>	
+			
+			<div class="entry">
+				<a name="e12"/>
+				<div class="title">Running Kernow from Ant</div>	
+				<div class="para">Since 1.5 Kernow can be run from Ant.  If you run a sequence of transforms then its useful to run them using Ant, rather than select the files involved from the comboboxes each time.  Kernow comes with a sample buildfile which can be used as a boilerplate for chaining the transforms.  If you want to run this process, or just an individual target in the process, then you can use the "Batch" tab in Kernow.</div>				
+			</div>	
+			
+			<div class="entry">
+				<a name="e13"/>
+				<div class="title">The Batch Tab</div>	
+				<div class="para">The batch tab is an experimental "Ant Runner" designed to make it easy to execute Ant targets in a buildfile.  It will run any Ant buildfile, but its intended purpose is to selectively run targets in a buildfile that is normally used to run Kernow as part of a batch process.</div>
+			</div>	
+			
+			<div class="entry">
+				<a name="e14"/>
+				<div class="title">The config file kernow.config</div>	
+				<div class="para"><strong>kernow.config</strong> is a Java XML properties file used to store all of the settings and paths in the comboboxes.  When you close Kernow all of the settings are stored here, and reloaded the next time Kernow is run.  You can tell Kernow where to look for the config file using the system property "kernow.config" for example <code>-Dkernow.config=C:\kernow\kernow.config</code> (look in Run.bat), or if thats omitted it will look for it on the classpath.</div>
+				<div class="para">If Kernow can't find kernow.config, it will run with the default values (you can see what these are by running Kernow after deleting kernow.config).  If you are running Kernow from Ant and want different settings to the default, make sure you specify the path to the config as a system property.  Check the sample buildfile that comes with the download.</div>
+				<div class="para">If you are using Kernow through its API, then set all of the configuration values through their setters, for example: <code>Config.getConfig().setNovw(true);</code> Or just set the system property and the settings will be loaded from there.</div>
+			</div>	
+			
+			<div class="entry">
+				<a name="e15"/>
+				<div class="title">Memory issues - increasing the amount of memory available to Kernow</div>	
+				<div class="para">To increase the amount of memory available to Kernow, increase the "-Xmx256m" value in the Run.Bat file (for example -Xmx1024m to give the JVM 1GB).</div>
+			</div>							
+	
+			<div class="entry">
+				<a name="e16"/>
+				<div class="title">Support and features requests</div>	
+				<div class="para">For basic support please use the mailing list or forum.  For new features or advanced support please <a href="#top">email me</a>.</div>
+			</div>
+			<br/><br/>
+			<a href="#top">Back to top</div>
+			<br/><br/>	
+		</div> 
+	</div>
+
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2056984-2";
+urchinTracker();
+</script>
+
+	</body>
+</html>

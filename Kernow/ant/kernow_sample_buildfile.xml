@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Kernow Sample Buildfile" default="run-directory-transform" basedir=".">
+	
+	<!-- kernow.home should be set to the Kernow directory itself, the one containing the lib directory -->
+	<property name="kernow.home" value="C:/kernow"/>
+
+	<!-- The input XML directory (or single XML file) -->
+	<property name="input.dir" value="C:/xml"/>
+	
+	<!-- The stylesheet to use -->
+	<property name="xslt" value="C:/xslt/identity.xslt"/>
+	
+	<!-- The output directory (or single file) -->
+	<property name="output.dir" value="C:/output"/>
+	
+	<!-- Space separated list of parameters - wrapped in quotes if needed -->
+	<property name="xslt.params" value='"foo=baz bar" foo2=bar2'/>
+	
+	<!-- The initial template to use for standalone transforms -->
+	<property name="initialtemplate" value="main"/>
+	
+	<target name="run-single-file-transform">
+		<antcall target="kernow-single-file">
+			<param name="input.dir" value="${input.dir}"/>
+			<param name="xslt" value="${xslt}"/>
+			<param name="output.dir" value="${output.dir}"/>
+			<param name="xslt.params" value="${xslt.params}"/>
+		</antcall>
+	</target>
+	
+	<target name="run-directory-transform">
+		<antcall target="kernow-directory">
+			<param name="input.dir" value="${input.dir}"/>
+			<param name="xslt" value="${xslt}"/>
+			<param name="output.dir" value="${output.dir}"/>
+			<param name="xslt.params" value="${xslt.params}"/>
+		</antcall>
+	</target>
+	
+	<target name="run-standalone-transform">
+		<antcall target="kernow-standalone">
+			<param name="xslt" value="${xslt}"/>
+			<param name="output.dir" value="${output.dir}"/>
+			<param name="initialtemplate" value="${initialtemplate}"/>
+			<param name="xslt.params" value="${xslt.params}"/>
+		</antcall>
+	</target>		
+	
+	<target name="kernow-single-file">
+	  <fail message="Property: 'input.dir' not set" unless="input.dir"/>
+		<fail message="Property: 'xslt' not set" unless="xslt"/>
+		<fail message="Property: 'output.dir' not set" unless="output.dir"/>
+		<fail message="Property: 'xslt.params' not set" unless="xslt.params"/>
+		<java classname="net.sf.kernow.SingleFileTransform" fork="true" failonerror="true">
+			<jvmarg value="-Dkernow.config=${kernow.home}/kernow.config"/>
+			<jvmarg value="-Xmx512m"/>
+			<classpath>				
+				<pathelement location="${kernow.home}"/>
+				<fileset dir="${kernow.home}">
+					<include name="lib/*.jar"/>
+				</fileset>
+			</classpath>
+			<arg value="${input.dir}"/>			
+			<arg value="${xslt}"/>
+			<arg value="${output.dir}"/>
+			<arg line="${xslt.params}"/>
+		</java>	
+	</target>
+	
+	
+	<target name="kernow-directory">
+		<fail message="Property: 'input.dir' not set" unless="input.dir"/>
+		<fail message="Property: 'xslt' not set" unless="xslt"/>
+		<fail message="Property: 'output.dir' not set" unless="output.dir"/>
+		<fail message="Property: 'xslt.params' not set" unless="xslt.params"/>
+		<java classname="net.sf.kernow.DirectoryTransform" fork="true" failonerror="true">
+			<jvmarg value="-Dkernow.config=${kernow.home}/kernow.config"/>
+			<classpath>				
+				<pathelement location="${kernow.home}"/>
+				<fileset dir="${kernow.home}">
+					<include name="lib/*.jar"/>
+				</fileset>
+			</classpath>
+			<arg value="${input.dir}"/>			
+			<arg value="${xslt}"/>
+			<arg value="${output.dir}"/>
+			<arg line="${xslt.params}"/>
+		</java>	
+	</target>
+
+	<target name="kernow-standalone">
+		<fail message="Property: 'initialtemplate' not set" unless="initialtemplate"/>
+		<fail message="Property: 'xslt' not set" unless="xslt"/>
+		<fail message="Property: 'output.dir' not set" unless="output.dir"/>
+		<fail message="Property: 'xslt.params' not set" unless="xslt.params"/>
+		<java classname="net.sf.kernow.StandaloneTransform" fork="true" failonerror="true">
+			<jvmarg value="-Dkernow.config=${kernow.home}/kernow.config"/>
+			<classpath>				
+				<pathelement location="${kernow.home}"/>
+				<fileset dir="${kernow.home}">
+					<include name="lib/*.jar"/>
+				</fileset>
+			</classpath>		
+			<arg value="${xslt}"/>
+			<arg value="${initialtemplate}"/>
+			<arg value="${output.dir}"/>
+			<arg line="${xslt.params}"/>
+		</java>	
+	</target>
+
+</project>

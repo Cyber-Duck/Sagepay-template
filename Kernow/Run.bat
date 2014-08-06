@@ -1,0 +1,1 @@
+start javaw -Xmx256m -Dkernow.config="%CD%\kernow.config" -cp "%CD%;kernow.jar;lib/ant.jar;lib/ant-launcher.jar;lib/bounce.jar;lib/swing-layout-1.0.2.jar;lib/saxon8.jar;lib/saxon8-dom.jar;lib/saxon8sa.jar;lib/saxon8sa-jaxp.jar;" net.sf.kernow.GUI

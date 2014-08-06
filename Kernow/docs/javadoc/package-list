@@ -1,0 +1,9 @@
+net.sf.kernow
+net.sf.kernow.ant
+net.sf.kernow.extensions
+net.sf.kernow.internal
+net.sf.kernow.schema
+net.sf.kernow.transform
+net.sf.kernow.ui
+net.sf.kernow.util
+net.sf.kernow.xquery

@@ -1,0 +1,54 @@
+<states>
+	<state><code>AL</code><name>Alabama</name></state>
+	<state><code>AK</code><name>Alaska</name></state>
+	<state><code>AS</code><name>American Somoa</name></state>
+	<state><code>AZ</code><name>Arizona</name></state>
+	<state><code>AR</code><name>Arkansas</name></state>
+	<state><code>CA</code><name>California</name></state>
+	<state><code>CO</code><name>Colorado</name></state>
+	<state><code>CT</code><name>Connecticut</name></state>
+	<state><code>DE</code><name>Delaware</name></state>
+	<state><code>DC</code><name>District of Columbia</name></state>
+	<state><code>FL</code><name>Florida</name></state>
+	<state><code>GA</code><name>Georgia</name></state>
+	<state><code>HI</code><name>Hawaii</name></state>
+	<state><code>ID</code><name>Idaho</name></state>
+	<state><code>IL</code><name>Illinois</name></state>
+	<state><code>IN</code><name>Indiana</name></state>
+	<state><code>IA</code><name>Iowa</name></state>
+	<state><code>KS</code><name>Kansas</name></state>
+	<state><code>KY</code><name>Kentucky</name></state>
+	<state><code>LA</code><name>Louisiana</name></state>
+	<state><code>ME</code><name>Maine</name></state>
+	<state><code>MD</code><name>Maryland</name></state>
+	<state><code>MA</code><name>Massachusetts</name></state>
+	<state><code>MI</code><name>Michigan</name></state>
+	<state><code>MN</code><name>Minnesota</name></state>
+	<state><code>MS</code><name>Mississippi</name></state>
+	<state><code>MO</code><name>Missouri</name></state>
+	<state><code>MT</code><name>Montana</name></state>
+	<state><code>NE</code><name>Nebraska</name></state>
+	<state><code>NV</code><name>Nevada</name></state>
+	<state><code>NH</code><name>New Hampshire</name></state>
+	<state><code>NJ</code><name>New Jersey</name></state>
+	<state><code>NM</code><name>New Mexico</name></state>
+	<state><code>NY</code><name>New York</name></state>
+	<state><code>NC</code><name>North Carolina</name></state>
+	<state><code>ND</code><name>North Dakota</name></state>
+	<state><code>OH</code><name>Ohio</name></state>
+	<state><code>OK</code><name>Oklahoma</name></state>
+	<state><code>OR</code><name>Oregon</name></state>
+	<state><code>PA</code><name>Pennsylvania</name></state>
+	<state><code>RI</code><name>Rhode Island</name></state>
+	<state><code>SC</code><name>South Carolina</name></state>
+	<state><code>SD</code><name>South Dakota</name></state>
+	<state><code>TN</code><name>Tennessee</name></state>
+	<state><code>TX</code><name>Texas</name></state>
+	<state><code>UT</code><name>Utah</name></state>
+	<state><code>VT</code><name>Vermont</name></state>
+	<state><code>VA</code><name>Virginia</name></state>
+	<state><code>WA</code><name>Washington</name></state>
+	<state><code>WV</code><name>West Virginia</name></state>
+	<state><code>WI</code><name>Wisconsin</name></state>
+	<state><code>WY</code><name>Wyoming</name></state>
+</states>

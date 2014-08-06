@@ -1,0 +1,55 @@
+body {
+    color: #666;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width:100%;
+    height:auto;
+}
+
+a img {
+    border:0;
+}
+
+
+/* Grid */
+.container {
+    margin: 0 auto;
+}
+/* Iframe */
+#sagepay {
+    width: 100%;
+}
+
+@media all and (max-width: 679px) {
+    .container {
+        width: 96%;
+    }
+
+    /* Iframe */
+    #sagepay {
+        height: 900px;
+    }
+}
+@media all and (min-width: 680px) and (max-width: 1023px) {
+    .container {
+        width: 92%;
+    }
+    /* Iframe */
+    #sagepay {
+        height: 700px;
+    }
+}
+@media all and (min-width: 1024px) {
+    .container {
+        width: 960px;
+    }
+    /* Iframe */
+    #sagepay {
+        height: 700px;
+    }
+}

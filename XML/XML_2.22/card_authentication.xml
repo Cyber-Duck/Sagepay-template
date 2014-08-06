@@ -1,0 +1,48 @@
+<?xml version='1.0' ?>
+<payment-model>  <transaction>
+    <accounttype>E</accounttype>
+    <allowgiftaid>0</allowgiftaid>
+    <amount>8.7500</amount>
+    <applyavscv2>0</applyavscv2>
+    <billingaddress>1, The Chocolate Factory, Hemel Hempstead</billingaddress>
+    <billingpostcode>CH0 2KY</billingpostcode>
+    <contactfax/>
+    <contactnumber/>
+    <currency>GBP</currency>
+    <customeremail>William.Wonker@chocolatefactory.com</customeremail>
+    <customername>William Wonker</customername>
+    <deliveryaddress/>
+    <deliverypostcode/>
+    <description>Items from your site</description>
+    <formatedamount>8.75</formatedamount>
+    <transactionid>5000867d-cb64-290e-6aa7-342ac3e7e837</transactionid>
+    <transactiontypeid>1</transactiontypeid>
+    <vendortxcode>sagepay-200707051443-122631</vendortxcode>
+  </transaction>
+  <vendor>
+    <avscv2>true</avscv2>
+    <city/>
+    <countrycode>GB</countrycode>
+    <defaultcurrency>GBP</defaultcurrency>
+    <giftaid>true</giftaid>
+    <homepageurl>http://www.sagepay.com</homepageurl>
+    <isactive>2</isactive>
+    <logo>YourImages.gif</logo>
+    <notificationurl/>
+    <threed>true</threed>
+    <threedvendorname>Your3DSecureSite</threedvendorname>
+    <vendorprovidedname>Your lovely web site!</vendorprovidedname>
+	<vendortemplate>YourImages</vendortemplate>    
+	<vspvendorname>YourImages</vspvendorname>
+  </vendor>
+  <language>en</language>
+  <pareq-env>
+    <acsurl>https://test.sagepay.com/mpitools/accesscontroler?action=pareq</acsurl>
+    <md>2011836433931281</md>
+    <pareq>eJxVUdtuwjAMfd9XVP2AurmUFmSC2NAESKCObR/QpRFUoxfSFrq/XwLtYMrLObZzbB/jrMuPzlnpOiuLqUs8352JJ/w4aKUW70q2WgncqLpO9srJ0qlLfUIiNuKMjRmhEXEFxvOdOgnsRYTR8AjCQM1vLQ9J0QhM5Ol5tRWcjn3KEXqKudKrhQg440HoM8JZSEMf4RbGIsmVqHTZdJ4sc4QrR1m2RaN/RERHCAPBVh/FoWmqCcDlcvEeftkMwn2UuLWoNkpdloqvavm9a6sW6vCtXOzX7Sffxmu+O79upgi2AtOkUYL6fmhe4BA+4eNJwBCucUxyO4KIwsCsdcNY2Rbzh8RjAI2zWhVy2GBgqLqqLJSpoAh/GFNVSxHbdZxNvDJdLUe4b/GytPbKxjhGrLNXZMUy44sd+qpmCYKthf5o0N/WoH83/wXNSq/V</pareq>
+    <termurl>https://test.sagepay.com/gateway/service/authentication?action=callback</termurl>
+  </pareq-env>
+  <threedredirect-url>/gateway/service/authentication?action=redirect</threedredirect-url>
+  <imagesURL>../images/</imagesURL>
+  <threedskip-url>/gateway/service/authentication?action=skip</threedskip-url>
+</payment-model>
